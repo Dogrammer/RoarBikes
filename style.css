@@ -299,6 +299,10 @@ form {
 /* Tablet View */
 @media (max-width: 768px) {
 
+    #about-nav {
+        margin-right: 30%;
+    }
+
     .slide-container {
         margin-left: 6%;
         margin-top: 10%;
@@ -332,7 +336,7 @@ form {
         padding:10px;
         font-size: 1.2rem;
         text-align: center;
-        background-color: green;    
+        /* background-color: green;     */
         
     }
 
@@ -482,7 +486,49 @@ form {
 
 /* mobile view */
 @media (max-width: 500px) {
-   
+    form {
+        margin: 40px 0px;
+        margin-left: 15%;
+    }
+
+    .inputwrapper {
+        margin-bottom: 30px;
+    }
+    
+    input[type=text], input[type=email], textarea {
+        padding: 12px 20px; 
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3rem;
+        box-sizing: border-box;
+        height: 200px;
+    }
+
+    input[type=radio] {
+        width: 10px;
+        height: 10px;
+    }
+    input[type=submit] {
+        width: 250px;
+        height: 100px;
+        margin-left: 35%;
+    }
+
+    .newline {
+        font-size: 3rem;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    label {
+        font-size: 3rem;
+    }
+
+    #county {
+        height: 65px;
+        font-size: 3rem;
+    }
+
     .youtube-video {
         margin-left: 5%;
     }
@@ -547,14 +593,14 @@ form {
         border-bottom: 0px solid white;
     }
 
-    nav {
+    nav, #about-nav {
         border: 0;
         display: block;
         width: 100%;
         margin-right: 20%;
     }
 
-    .navbutton {
+    .navbutton, .navbutton2 {
         display: block;
         font-size: 3rem;
         text-align: center;
@@ -568,6 +614,16 @@ form {
     }
 
     .navbutton a {
+        padding: 10px;
+        font-size: 5rem;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 0px solid white;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .navbutton2 a {
         padding: 10px;
         font-size: 5rem;
         display: inline-block;
@@ -678,4 +734,12 @@ form {
         margin: 5px 2px;
         border-radius: 50%;
 }
+    .maps {
+        margin-left: 10%;
+    }
+    #h1-contact {
+        margin-left: 20%;
+        font-style: italic;
+    }
+    
 }
