@@ -148,7 +148,7 @@ nav a.mybutton {
     margin-left: 30px;
 }
 
-.navbutton {
+.navbutton, .navbutton2 {
     border: 1px solid white;
     padding: 11px 25px;
     font-family: 'Playfair Display', serif;
@@ -299,19 +299,47 @@ form {
 /* Tablet View */
 @media (max-width: 768px) {
 
+    .slide-container {
+        margin-left: 6%;
+        margin-top: 10%;
+    }
+    h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    .main-p {
+        display: none;
+    }   
+     /* .heading-main {
+         display: block;
+        margin-top: 10%;
+        margin-left: 46%;
+    }  */
     .navbutton {
-        height: 57px;
+        height: 50px;
         padding: 10px;
         /* padding-bottom: 5px; */
         /* padding-top: 5px; */
         font-size: 3rem;
         text-align: center;
+        /* background-color: green; */
         /* width: 100%; */
     }
 
-    .navbutton a {
+    .navbutton2 {
+        height:65px;
+        padding:10px;
+        font-size: 1.2rem;
+        text-align: center;
+        background-color: green;    
+        
+    }
+
+    .navbutton a, .navbutton2 a {
         padding: 0px;
         font-size: 2rem;
+        position:relative;
         /* display: inline-block; */
         /* width: 100%; */
         margin-left: auto;
@@ -341,6 +369,7 @@ form {
         width: 60%;
     }
     main .herobox1 {
+        display: block;
         width:80%;
         padding: 10px;
         margin-left: auto;
@@ -444,15 +473,28 @@ form {
     }
 
     header {
-        margin-left: 5%;
+        margin-left: 6%;
     }
-
+    .newbox {
+        display: none;
+    }
 }
 
 /* mobile view */
 @media (max-width: 500px) {
    
-    main {
+    .youtube-video {
+        margin-left: 5%;
+    }
+    .container {
+        margin-left: -14%;
+    }
+
+    .main p {
+        display: none;
+    }
+
+    main, .main {
         width: 100%;
         margin-left:2%;
         margin-top:5%;
@@ -467,8 +509,13 @@ form {
         padding: 25px;
         width: 40%;
         font-size: 3.5rem;  
+        /* margin-left: 25%; */
     }
 
+    
+    main {
+        margin-left: 10%;
+    }
     main h1 {
         font-size: 4.5rem;
         width: 100%;
@@ -497,6 +544,7 @@ form {
         display: block;
         width: 100%;
         padding: 0;
+        border-bottom: 0px solid white;
     }
 
     nav {
@@ -506,31 +554,34 @@ form {
         margin-right: 20%;
     }
 
-
-
     .navbutton {
-        border: 0px solid green;
-        border-bottom: 2px solid lightgray;
         display: block;
         font-size: 3rem;
         text-align: center;
         width: 100%;
+        margin-right: 20%;
+        margin-top: 50px;
+        padding: 20px 50px 70px 50px;
+        border: 0px solid white;
+        /* border-bottom: 2px solid rgb(88, 83, 83); */
+
     }
 
     .navbutton a {
-        /* padding: 10px; */
-        font-size: 4rem;
+        padding: 10px;
+        font-size: 5rem;
         display: inline-block;
-        /* width: 100%; */
         margin-left: auto;
         margin-right: auto;
+        border: 0px solid white;
+        border-bottom: 1px solid lightgray;
     }
 
     .cards {
         margin-top:5%;
         display: block;
         text-align: center;
-        margin-left: 5%;
+        margin-left: 20%;
     }
 
     .herobox2 img {
@@ -580,7 +631,7 @@ form {
         flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 100px;
-        margin-left: 5%;
+        margin-left: 20%;
     }
     
     .tbox {
@@ -602,4 +653,29 @@ form {
         font-size: 2.0rem;
         padding-left: 30px;
     }
+
+    .heading-main {
+        margin-top:10%;
+        font-size: 5rem;
+        font-style: italic;
+    }
+
+    .social-media {
+        margin-left: 10%;
+    }
+
+    .social-media p {
+        margin-top: 3%;
+        font-size: 50px;
+    }
+
+    .social-media .fa {
+        padding: 35px;
+        font-size: 70px;
+        width: 60px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+}
 }
